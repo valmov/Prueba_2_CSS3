@@ -1,0 +1,273 @@
+body {
+	background-color: #02010a;
+    font-family: 'Dancing Script';
+    display: grid;
+    margin: 10px;
+    height: 100%;
+    padding: 10px;	
+}
+
+header {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #5b7989;
+}
+
+header div h1 {
+	color: #ffffff;
+	text-shadow: 2px 2px #02010a;
+	text-align: center;
+	font-size: 250%;
+}
+
+header div nav {
+	display: flex;
+    display: -webkit-flex;
+	flex-direction: row;
+	margin: 2px
+}
+
+header div nav a {	
+	color: #ffffff;
+    flex-grow: 0.5;
+    display: flex;
+    display: -webkit-flex;
+    width: min-content;
+    height: min-content;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#menu {
+	width: 100%;
+}
+
+@media all and (min-width:900px) {
+header div h1 {
+	text-align: center;
+}
+
+
+#menu {
+	width: 40%;
+}
+
+#menu :hover {
+	color: #000000;
+}
+
+}
+.boton {
+	text-decoration: none;
+	font-size: 150%;
+}	
+
+#body {
+	width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 4px;
+    align-content: center;
+    margin: auto;
+    animation: rebote 1s;   
+}
+
+div#contenido {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+@media all and (min-width:900px) {
+#body {
+	width: 900px
+}
+}
+
+img {
+	box-shadow: 2px 2px #02010a;
+
+}
+
+#imagen_principal {
+	width: 100%;
+	background: #82c3a6;
+	padding: 10px;
+}
+
+#imagen_principal figure {
+	width: 85%;
+	height: auto;
+	margin: auto;
+}
+
+#imagen_principal figure img {
+	width: 100%;
+	padding-bottom: unset;
+	margin: auto;
+}
+figure a{
+	width: auto;
+
+}
+#imagen_secundaria {
+	display: flex;
+    display: -webkit-flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	background: #d5c75f;
+	border: 1px;
+	font-size: 100%;
+}
+#imagen_secundaria figure {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+}
+
+@media all and (min-width:900px) {
+#imagen_secundaria figure {
+	width: 40%;
+}
+}
+#imagen_secundaria figure img {
+	width: 100%;
+	transition-property: transform;
+	transition-duration: 1s;
+}
+
+#imagen_secundaria figure p {
+	text-align: center;
+	text-decoration: underline;
+	font-size: 1.5em;
+}
+img[class="rotacion"]:hover{
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
+}
+img[class="traslacion"]:hover{
+  -webkit-transform: translate(20px,-5px);
+  transform: translate(20px,-5px);
+  box-shadow: 2px 2px #82c3a6;
+}
+
+footer {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 100%;
+    background: #c6d5c5;
+    padding: 3px;
+    border-radius: 0 0 10px 10px;
+}
+
+.footer {
+    margin: 24px;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+div .contact{
+	display: flex;
+    display: -webkit-flex;
+}
+ 
+label {
+	margin-left: 5px;
+}
+.footer img{
+	width: auto;
+    height: 20px;
+    box-shadow: none;
+    margin-left: 10px;
+}
+
+div .row {
+	display: flex;
+    display: -webkit-flex;
+	margin-top: 10px;
+	align-items: center;
+
+}
+
+
+.row img {
+	width: auto;
+    height: 20px;
+    box-shadow: none;
+}
+
+.row  a {
+	margin-left: 10px;
+	}
+
+a:hover {
+  color: #ffffff;
+}
+
+div a{
+	color: #02010a;
+	text-decoration: none;
+	margin-left: 8px;
+}
+
+
+
+@media all and (min-width:900px) {
+footer div div {
+	
+	inline-size: max-content;
+}
+}
+
+footer div h4 {
+	margin: 5px ;
+	font-size: 16px;
+	inline-size: max-content;
+}
+
+footer div p {
+	margin: 10px;
+}
+
+
+@keyframes rebote{
+0%{
+  margin-top: 150%;
+}
+60%{
+  margin-top: -5%;
+}
+100%{
+  margin-top: 0%;
+}
+}
+
+
+
